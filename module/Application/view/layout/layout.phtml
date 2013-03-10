@@ -1,0 +1,40 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <?= $this->headTitle("Application")->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?= $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->setCharset('UTF-8') ?>
+
+        <!-- Le styles -->
+        <?php $this->headLink(array(
+            'rel' => 'shortcut icon', 
+            'type' => 'image/vnd.microsoft.icon', 
+            'href' => '/images/favicon.ico')
+        )->appendStylesheet('/styles/style.css')?>
+
+        <?= $this->headLink(array(
+                            'rel' => "stylesheet/less",
+                            'type' => "text/css",
+                            'href' => "/styles/style.less"
+                        )) ?>
+
+        <!-- Scripts -->
+        <?= $this->headScript()->prependFile('/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',)) 
+                                      ->prependFile('/scripts/less-1.3.3.min.js')
+                                      ->prependFile('/scripts/jquery-1.9.1.min.js') ?>
+
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">einarvalur</a></h1>
+            <nav></nav>
+            <h2>Version 3.1</h2>
+        </header>
+        <?php echo $this->content; ?>
+        <footer>
+
+        </footer>
+    </body>
+</html>
