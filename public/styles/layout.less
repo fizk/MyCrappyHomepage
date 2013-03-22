@@ -1,54 +1,123 @@
 
 /* - - - - [ GLOBAL ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 	body{
-		background: orange;
 		font-family: Futura;
 	}
-	
+
 
 /* - - - - [ HEADER / MENU ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 	body > header{
-		background: rgb(0,0,0);
-		border-bottom: 4px solid rgb(255,255,255);
+		border-bottom: 10px solid transparent;
 		position: relative;
-	}
-	body > header a{
-		color: rgb(255,255,255);
-	}
-
-	body > header > nav{}
-	body > header > h1{
-		padding: 20px;
-	}
-	body > header > h2{
-		position: absolute;
-		right: 10px;
-		bottom: -15px;
-		width: 59px;
-		height: 62px;
-		background: url(images/sprite-header.png) no-repeat 0 0;
-		text-indent: -999999px;
+		h1{
+			padding: 20px;
+		}
+		h2{
+			position: absolute;
+			right: 10px;
+			bottom: -20px;
+			width: 59px;
+			height: 62px;
+			background: url(images/sprite-header.png) no-repeat 0 0;
+			text-indent: -999999px;
+			
+		}
 	}
 
 
-/* - - - - [ INDEX - PAGE ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-	#index-wrapper{
-		max-width: 960px;
-		margin: 40px auto;
-		-webkit-column-count:3;
-		-moz-column-count:3;
-		-ms-column-count:3;
-		-o-column-count:3;
-		column-count:3;
+/* - - - - [ FOOTER ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+	body > footer{
+		border-top: 10px solid transparent;
+		position: relative;
+		padding: 20px 0;
+		nav{
+			max-width: 960px;
+			margin: 0 auto;
+		}
 	}
 
-	article.index-article{}
-	article.index-article header{}
-	article.index-article header hgroup{}
-	article.index-article header hgroup h1{
-		font-size: 2em;
+
+
+/* - - - - [ KEY - VALUE ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+	/**
+	 * Structure
+	 */
+	dl.key-value{
+		.iefix();
+		dt{
+			float: left;
+			clear: both;
+		}
+		dd{
+			float: left;
+		}
 	}
-	article.index-article header hgroup h2{
-		font-size: 0.85em;
-		font-style: italic;
-	}	
+	dl.key-value:after{.clearfix};
+
+	/**
+	 * Size
+	 */
+	dl.key-value.half{
+		dt{ width: 50%; }
+		dd{ width: 50%; }
+	}
+	dl.key-value.third{
+		dt{ width: 33.33%; }
+		dd{ width: 66.66%; }		
+	}
+	dl.key-value.forth{
+		dt{ width: 25%; }
+		dd{ width: 75%; }		
+	}
+
+
+/* - - - - [ COLUMN -ROW ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+	/**
+	 * Structure
+	 */
+	div.row{ 
+		.iefix(); 
+		div.column{
+			float:left;
+		}
+	}
+	div.row:after{.clearfix;}
+
+	div.row.half{
+		div.column{ width: 50%; }
+	}
+	div.row.third{
+		div.column{ width: 33.33%; }
+	}
+	div.row.forth{
+		div.column{ width: 25%; }
+	}
+
+	@media (max-width: 768px){
+		/*
+		div.row.half{
+			div.column{ width: 50%; }
+		}
+		div.row.third{
+			div.column{ width: 33.33%; }
+		}
+		*/
+		div.row.forth{
+			div.column{ width: 50%; }
+		}
+	}
+	@media (max-width: 480px){
+		div.row.half{
+			div.column{ width: auto; float: none; }
+		}
+		div.row.third{
+			div.column{ width: auto; float: none; }
+		}
+		div.row.forth{
+			div.column{ width: auto; float: none; }
+		}
+	}
+
+

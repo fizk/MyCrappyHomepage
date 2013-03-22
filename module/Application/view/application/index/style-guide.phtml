@@ -1,0 +1,121 @@
+<?php
+
+	$this->headLink(array(
+		"rel" => "stylesheet/less",
+		"type" => "text/css",
+		"href" => "/styles/modules/application/app.less"
+	));
+
+	$this->headTitle("Style Guide");
+?>
+<section id="style-guide">
+	<article class="style-guide">
+		<header>
+			<h1>Key value</h1>
+		</header>
+		<section>
+			<p>Key value is the classic definition list.</p>
+			<pre>
+&lt;dl class="key-value [size]"&gt;
+	&lt;dt&gt;key 1&lt;/dt&gt;
+	&lt;dd&gt;value 1&lt;/dd&gt;
+	&lt;dt&gt;key 2&lt;/dt&gt;
+	&lt;dd&gt;value 2&lt;/dd&gt;
+	&lt;dt&gt;key 3&lt;/dt&gt;
+	&lt;dd&gt;value 3&lt;/dd&gt;
+&lt;/dl&gt;	
+			</pre>
+
+			<figure>
+				<dl class="key-value half">
+					<dt>key 1</dt>
+					<dd>value 1</dd>
+					<dt>key 2</dt>
+					<dd>value 2</dd>
+					<dt>key 3</dt>
+					<dd>value 3</dd>
+				</dl>
+				<figcaption>
+					<code>&lt;dl class="key-value half"&gt;</code>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<dl class="key-value third">
+					<dt>key 1</dt>
+					<dd>value 1</dd>
+					<dt>key 2</dt>
+					<dd>value 2</dd>
+					<dt>key 3</dt>
+					<dd>value 3</dd>
+				</dl>
+				<figcaption>
+					<code>&lt;dl class="key-value third"&gt;</code>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<dl class="key-value forth">
+					<dt>key 1</dt>
+					<dd>value 1</dd>
+					<dt>key 2</dt>
+					<dd>value 2</dd>
+					<dt>key 3</dt>
+					<dd>value 3</dd>
+				</dl>
+				<figcaption>
+					<code>&lt;dl class="key-value forth"&gt;</code>
+				</figcaption>
+			</figure>
+									
+		</section>
+		<footer></footer>
+	</article>
+
+
+	<article class="style-guide">
+		<header>
+			<h1>Row / column</h1>
+		</header>
+		<section>
+			<p>Create columns in a row</p>
+			<pre>
+&lt;div class="row [size]"&gt;
+	&lt;div class="column"&gt; column 1&lt;/div&gt;
+	&lt;div class="column"&gt; column 2&lt;/div&gt;
+&lt;/div&gt;	
+			</pre>
+			<figure>
+				<div class="row half">
+					<div class="column"> column 1</div>
+					<div class="column"> column 2</div>
+				</div>
+				<figcaption>
+					<code>&lt;div class="row half"&gt;</code>
+				</figcaption>
+			</figure>
+			<figure>
+				<div class="row third">
+					<div class="column"> column 1</div>
+					<div class="column"> column 2</div>
+					<div class="column"> column 3</div>
+				</div>
+				<figcaption>
+					<code>&lt;div class="row third"&gt;</code>
+				</figcaption>
+			</figure>
+			<figure>
+				<div class="row forth">
+					<div class="column"> column 1</div>
+					<div class="column"> column 2</div>
+					<div class="column"> column 3</div>
+					<div class="column"> column 4</div>
+				</div>
+				<figcaption>
+					<code>&lt;div class="row forth"&gt;</code>
+				</figcaption>
+			</figure>
+		</section>
+		<footer></footer>
+	</article>
+</section>

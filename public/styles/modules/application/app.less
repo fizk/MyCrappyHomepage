@@ -1,0 +1,136 @@
+
+	@import url(resources.less);
+
+/* - - - - [ GLOBAL ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+	body{
+		background: @color-background-body;
+		color: @color-text;
+		a{
+			color: @color-link;
+		}
+	}
+
+
+/* - - - - [ HEADER / MENU ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+	body > header{
+		background: @color-background-header;
+		border-bottom-color: @color-border-header;
+		a{
+			color: @color-footer-link;
+		}
+	}
+
+
+/* - - - - [ FOOTER ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+	body > footer{
+		background: @color-background-footer;
+		border-top-color: @color-border-footer;
+		nav{
+			color: @color-footer-text;
+			a{
+				color: @color-footer-link;
+			}
+		}
+	}
+
+
+
+/* - - - - [ STYLE - GUIDE ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+	section#style-guide{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	article.style-guide{
+		pre{
+			padding: @padding*2;
+			margin: @margin*2 0;			
+			background: rgba(0,0,0,.1);
+			overflow: auto;
+		}
+		figure{
+			padding: @padding*2;
+			margin: @margin*2 0;
+			background: rgba(255,255,255,.1);
+		}
+	}
+
+
+/* - - - - [ INDEX - PAGE ] - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+	div.article-wrapper{
+		max-width: 960px;
+		margin: 40px auto;
+		-webkit-column-count:3;
+		-moz-column-count:3;
+		-ms-column-count:3;
+		-o-column-count:3;
+		column-count:3;
+
+		article{
+			border-bottom: 1px dashed @color-text;
+			margin: @margin*2 0;
+			padding: @padding*2 0;
+			header{
+				margin: 0 0 @margin*2 0;
+				hgroup{
+					h1{
+						font-size: 2em;
+					}
+					h2{
+						font-size: 0.85em;
+						font-style: italic;
+					}
+				}
+			}
+			section{}
+			footer{
+				ul{
+					li{
+						text-align: right;
+					}
+				}
+			}
+		}
+		article:first-child{
+			margin-top: 0;
+			padding-top: 0;
+		}
+		article:last-child{
+			border: none;
+		}
+
+		article#profile-article{
+			section{
+				p{
+					.iefix;
+					img{
+						.border-radius( 50% );
+						display: block;
+						.box-shadow(0 2px 5px @color-darkshadow);
+						float: left;
+						margin: 0 10px 0 0px;
+					}
+				}
+				p:after{.clearfix;}
+			}
+		}
+	}		
+
+
+	@media (max-width: 768px){
+
+	}
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+
+		div.article-wrapper{
+			margin: 40px 10px;
+			-webkit-column-count:1;
+			-moz-column-count:1;
+			-ms-column-count:1;
+			-o-column-count:1;
+			column-count:1;
+
+		}
+		
+	}

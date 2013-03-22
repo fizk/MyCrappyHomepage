@@ -9,16 +9,18 @@
 
         <!-- Le styles -->
         <?php $this->headLink(array(
-            'rel' => 'shortcut icon', 
-            'type' => 'image/vnd.microsoft.icon', 
-            'href' => '/images/favicon.ico')
-        )->appendStylesheet('/styles/style.css')?>
+            'rel' => 'icon', 
+            'type' => 'image/png', 
+            'sizes' => '16x16',
+            'href' => '/styles/images/favicon-16.png')
+        )?>
 
-        <?= $this->headLink(array(
-                            'rel' => "stylesheet/less",
-                            'type' => "text/css",
-                            'href' => "/styles/style.less"
-                        )) ?>
+
+        <?= $this->headLink()->prependAlternate(array(
+            'rel' => "stylesheet/less",
+            'type' => "text/css",
+            'href' => "/styles/style.less"
+        ))->appendStylesheet('/styles/style.css') ?>
 
         <!-- Scripts -->
         <?= $this->headScript()->prependFile('/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',)) 
@@ -34,7 +36,15 @@
         </header>
         <?php echo $this->content; ?>
         <footer>
+            <nav>
+                <dl>
+                    <dt><a href="/whiteboard">Whiteboard</a></dt>
+                    <dd>A JavaScript/Canvas drawing application</dd>
 
+                    <dt><a href="/althingi">Alþingi</a></dt>
+                    <dd>A REST api for data provided by the Icelandic parlement</dd>
+                </dl>
+            </nav>
         </footer>
     </body>
 </html>

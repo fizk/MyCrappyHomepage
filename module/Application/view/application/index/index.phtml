@@ -1,5 +1,40 @@
-<div id="index-wrapper">
-	<article class="index-article">
+<?php
+
+	$this->headLink(array(
+		"rel" => "stylesheet/less",
+		"type" => "text/css",
+		"href" => "/styles/modules/application/app.less"
+	));
+
+	$this->headTitle("Index");
+?>
+
+
+<div class="article-wrapper">
+
+	<article id="profile-article" class="index-article">
+		<header>
+			<hgroup>
+				<h1>Me, me, me</h1>
+				<h2>A litlebit about me</h2>
+			</hgroup>
+		</header>
+		<section>
+			<p>
+				<img src="/images/profile-image.jpg">
+				A programmer, graphic designer/artist, instrument player and 
+				more, this is me. Or it just to be me
+			</p>
+			<p>Lorem ipsum laborum proident aute magna Ut reprehenderit officia 
+				aute pariatur occaecat sint aliquip deserunt ad dolor elit Duis 
+				Excepteur commodo labore velit labore in sunt deserunt Duis aute 
+				culpa cupidatat. </p>
+			<p>Lorem ipsum in do velit irure cupidatat minim ut consequat do est 
+				aliqua aute mollit sint culpa minim cillum adipisicing veniam dolore. </p>
+		</section>
+	</article>
+
+	<article class="">
 		<header>
 			<hgroup>
 				<h1>Whiteboard</h1>
@@ -26,7 +61,7 @@
 		</footer>
 	</article>
 
-	<article class="index-article">
+	<article class="">
 		<header>
 			<hgroup>
 				<h1>Alþingi</h1>
@@ -34,13 +69,37 @@
 			</hgroup>
 		</header>
 		<section>
-			<p>Blabla jólakaka</p>	
+			<p>Lorem ipsum dolor sed sint nisi fugiat proident velit fugiat velit culpa ut aliquip 
+				fugiat qui magna tempor esse minim in Duis aliquip in ut sunt ut laborum eiusmod 
+				pariatur voluptate exercitation ut pariatur deserunt sit irure ut nulla adipisicing 
+				veniam eu dolore do ut nisi consectetur qui ullamco sint voluptate eiusmod velit 
+				enim sint elit do cillum et enim culpa tempor proident consequat nulla irure 
+				voluptate sed pariatur dolore Excepteur ut commodo est sed aliquip aliquip deserunt 
+				aute sunt enim anim in in aute minim tempor occaecat sit in culpa sed reprehenderit 
+				in exercitation est exercitation enim do consequat culpa eiusmod irure ex est elit 
+				pariatur ex qui deserunt consequat esse aliquip in cillum mollit laboris anim voluptate 
+				consequat dolor ullamco eiusmod elit ad officia culpa ad laboris laborum Excepteur 
+				labore eiusmod anim sint laborum proident mollit amet reprehenderit occaecat dolor ea 
+				nostrud nostrud sed est ullamco occaecat id aliqua irure veniam mollit sint ad cillum 
+				non Duis nisi aute est laborum officia elit tempor nisi irure deserunt veniam consectetur 
+				enim labore dolore Duis ullamco voluptate Duis sed et dolore nostrud sint tempor aute in 
+				adipisicing ut pariatur Ut esse sunt veniam eiusmod ut magna aute nostrud deserunt ex. </p>	
 		</section>
 		<footer>
 			<ul>
-				<li><a href="/althingi/member">application</a></li>
-				<li><a href="/althingi/about">about</a></li>
+				<li><a href="/althingi">application</a></li>
 			</ul>
 		</footer>
 	</article>
+
+	<article class="">
+		<header>
+			<h1>SVG</h1>
+		</header>
+		<section>
+			<p>Using SVG images in layout</p>
+			<img id="index-logo" src="/styles/images/header-logo.svg" />
+		</section>
+	</article>
+
 </div>
