@@ -12,7 +12,6 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
-//            'Althingi\Controller\Index' => 'Althingi\Controller\IndexController',
         ),
     ),
 
@@ -70,6 +69,9 @@ return array(
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',
+        ),
+        'strategies' => array(
+            'ViewJsonStrategy',
         ),
     ),
 );

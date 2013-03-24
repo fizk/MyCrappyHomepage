@@ -8,7 +8,9 @@ nbproject
 *.settings
 composer.lock
 vendor/
-module/Althingi/
+module/Althingi
+module/Music
 module/Whiteboard/
-public/scripts/modules/althingi/
-public/scripts/modules/whiteboard/
+public/modules/althingi
+public/modules/whiteboard
+public/modules/music
