@@ -6,6 +6,7 @@ return array(
         'Althingi',
         'Whiteboard',
         'Music',
+        'Maze',
     ),
 
     // These are various options for the listeners attached to the ModuleManager
