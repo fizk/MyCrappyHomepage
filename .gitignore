@@ -9,8 +9,12 @@ nbproject
 composer.lock
 vendor/
 module/Althingi
+module/Application
+module/Maze
 module/Music
 module/Whiteboard/
 public/modules/althingi
-public/modules/whiteboard
+public/modules/application
+public/modules/maze
 public/modules/music
+public/modules/whiteboard
